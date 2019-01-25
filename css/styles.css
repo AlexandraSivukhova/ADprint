@@ -444,7 +444,7 @@ a:hover {
 @media screen and (max-width: 768px) {
     
     .header-bg {
-        display: none; 
+        /* display: none;  */
     }
     .header__bg--mobile {
         display: block;
