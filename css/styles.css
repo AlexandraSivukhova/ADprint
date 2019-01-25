@@ -517,20 +517,20 @@ a:hover {
         margin: 0;
     }
     .header__block--content {
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
 }
 @media screen and (max-width: 767px) {
     .header-bg {
+        display: none; 
+    }
+    .header__bg--mobile {
         display: block;
         max-width: 100%;
-        min-height: 700px;
+        height: 700px;
         position: absolute;
         z-index: -2;
         padding: 0;
-    }
-    .header__bg--mobile {
-        display: none; 
     }
     .header-menu__whitebox {
         display: none;
@@ -594,15 +594,23 @@ a:hover {
         align-self: center;
         margin: 0;
     }
-    .header__block--content {
-        margin-bottom: 100px;
+    .header-advantages {
+        display: none;
     }
+
     .header__text--big {
         font-size: 46px;
         padding-bottom: 25px;
     }
     .header__text--small {
         font-size: 27px;
+        margin-bottom: 30px;
     }
-
+    .form__box {
+        width: 527px;
+        margin-right: 14px;
+    }
+    .form__content {
+        width: 240px;
+    }
 }
