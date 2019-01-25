@@ -522,7 +522,12 @@ a:hover {
 }
 @media screen and (max-width: 767px) {
     .header-bg {
-        display: block; 
+        display: block;
+        max-width: 100%;
+        min-height: 700px;
+        position: absolute;
+        z-index: -2;
+        padding: 0;
     }
     .header__bg--mobile {
         display: none; 
