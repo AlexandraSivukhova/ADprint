@@ -444,12 +444,12 @@ a:hover {
 @media screen and (max-width: 768px) {
     
     .header-bg {
-        /* display: none;  */
+        display: none; 
     }
     .header__bg--mobile {
         display: block;
         max-width: 100%;
-        min-height: 100wh;
+        min-height: 100vw;
         position: absolute;
         z-index: -2;
         padding: 0;
@@ -522,12 +522,12 @@ a:hover {
 }
 @media screen and (max-width: 767px) {
     .header-bg {
-        /* display: none;  */
+        display: none; 
     }
     .header__bg--mobile {
         display: block;
         max-width: 100%;
-        min-height: 100wh;
+        min-height: 100vw;
         position: absolute;
         z-index: -2;
         padding: 0;
@@ -597,4 +597,12 @@ a:hover {
     .header__block--content {
         margin-bottom: 100px;
     }
+    .header__text--big {
+        font-size: 46px;
+        padding-bottom: 25px;
+    }
+    .header__text--small {
+        font-size: 27px;
+    }
+
 }
