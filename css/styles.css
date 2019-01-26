@@ -131,6 +131,9 @@ a:hover {
     text-align: center;
     margin-bottom: 70px;
 }
+.header-block__right--adaptive {
+    display: none;
+}
 .form__box {
     width: 315px;
     height: auto;
@@ -389,6 +392,9 @@ a:hover {
     .header-menu__whitebox {
         height: 13%;
     }
+    .header-block__right--adaptive {
+        display: none;
+    }
     .experience__block--box {
         width: 200px;
         height: 195px;
@@ -427,6 +433,9 @@ a:hover {
     }
     .header__text--small {
         font-size: 18px;
+    }
+    .header-block__right--adaptive {
+        display: none;
     }
     .header__advantages--block {
         padding: 0;
@@ -515,10 +524,13 @@ a:hover {
       .header-logo {
         align-self: center;
         margin: 0;
-    }
-    .header__block--content {
-        /* margin-bottom: 100px; */
-    }
+        }
+        .header__block--content {
+            /* margin-bottom: 100px; */
+        }
+        .header-block__right--adaptive {
+            display: none;
+        }
 }
 @media screen and (max-width: 767px) {
     .header-bg {
@@ -612,5 +624,169 @@ a:hover {
     }
     .form__content {
         width: 240px;
+    }
+    .header-block__right {
+        display: none;
+    }
+    .header-block__right--adaptive {
+        display: block;
+    }
+    .experience-container {
+        flex-flow: row wrap;
+    }
+    .experience__block--adaptive {
+        display: block;
+    }
+    .experience-block:first-child {
+        margin-bottom: 20px;
+    }
+    .footer-wrapper {
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    .footer__content {
+        padding: 20px 0;
+    }
+    .social {
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .wrapper-box {
+        width: 400px;
+        margin: auto;
+    }
+    .container {
+        width: 400px;
+        margin: auto;
+    }
+    .menu {
+        height: 27px;
+    }
+    .menu-global {
+        border-top: 4px solid white;
+    }
+    .menu-top {
+        top: 4px;
+    }
+    .menu-middle {
+        top: 11px;
+    }
+    .menu-bottom {
+        top: 18px;
+    }
+    .header-block__right--adaptive {
+        display: none;
+    }
+    .header-block__left {
+        width: 400px;
+        margin: auto;
+    }
+    .header-block__right {
+        display: block;
+    }
+    .header__text--big {
+        font-size: 35px;
+        line-height: 40px;
+        padding-top: 35px;
+    }
+    .header__text--small {
+        width: 340px;
+        padding-left: 18px;
+    }
+    .form__box {
+        width: 375px;
+        margin-right: 14px;
+    }
+    .form__content {
+        width: 264px;
+        margin: 0 0 10px 0;
+    }
+    .form__text--confedentional {
+        font-size: 9px;
+        margin: 0;
+    }
+    .experience-block {
+        width: auto;
+        padding: 0;
+    }
+    .experience-container {
+        padding: 0;
+    }
+    .experience__block--box {
+        width: 175px;
+        height: 195px;
+        padding: 15px;
+    }
+    .map__adress--box {
+        width: 290px;
+    }
+}
+@media screen and (min-width: 320px) {
+    .container {
+        width: 310px;
+        margin: auto;
+    }
+    .wrapper-box {
+        width: 310px;
+        margin: auto;
+    }
+    .header__text--big {
+        width: 310px;
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .header__text--small {
+        width: 260px;
+        text-align: center;
+        margin: auto;
+    }
+    .form__box {
+        width: 295px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .float-right {
+        float: none !important;
+    }
+    .block--name {
+        text-align: center;
+    }
+    .experience-container {
+        flex-flow: column;
+        align-items: center;
+    }
+    .experience-block:first-child {
+        margin-bottom: 10px;
+    }
+    .experience-block {
+        margin-bottom: 10px;
+    }
+    .map__adress--box {
+        width: 260px;
+        border-top: 10px solid #e30713;
+        padding: 10px;
+        margin: auto;
+    }
+    .map__adress--name {
+        padding-bottom: 0;
+    }
+    .row {
+        -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .align-items-center {
+        -ms-flex-align: baseline !important;
+        align-items: baseline !important;
+    }
+    img {
+        vertical-align: text-top;
     }
 }
