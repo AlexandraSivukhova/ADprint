@@ -413,6 +413,9 @@ a:hover {
     .header-bg {
         min-height: 560px;
     }
+    .header__bg--test {
+        display: none;
+    }
     .header-menu__whitebox {
         height: 14.2%;
     }
@@ -661,6 +664,9 @@ a:hover {
         width: 400px;
         margin: auto;
     }
+    .header__bg {
+        display: none;
+    }
     .menu {
         height: 27px;
     }
@@ -723,14 +729,20 @@ a:hover {
         width: 290px;
     }
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 450px) {
     .container {
         width: 310px;
         margin: auto;
     }
+    .header-bg {
+        display: none; 
+    }
     .wrapper-box {
         width: 310px;
         margin: auto;
+    }
+    .header-block__left {
+        padding: 0;
     }
     .header__text--big {
         width: 310px;
@@ -751,11 +763,14 @@ a:hover {
         margin-top: 20px;
         padding: 10px;
     }
-    .float-right {
-        float: none !important;
-    }
     .block--name {
         text-align: center;
+    }
+    .header-block__right {
+        display: none;
+    }
+    .header-block__right--adaptive {
+        display: block;
     }
     .experience-container {
         flex-flow: column;
