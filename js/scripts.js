@@ -1,5 +1,5 @@
 // cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
-var Menu = {
+/*var Menu = {
   
     el: {
       ham: $('.menu'),
@@ -30,4 +30,6 @@ var Menu = {
     }
   };
   
-  Menu.init();
+  Menu.init(); */
+
+  

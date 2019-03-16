@@ -321,6 +321,9 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+/* .open__list {
+    display: none;
+} */
 .list {
     color: #1b1b1b;
     list-style: none;
@@ -336,7 +339,17 @@ a:hover {
     margin-bottom: 70px;
     margin-top: 70px;
 }
+.map__adress {
+    position: relative;
+}
+#map {
+    height: 500px;
+    z-index: 1;
+}
 .map__adress--box {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
     background: #fff;
     border-top: 15px solid #e30713;
     padding: 20px;

@@ -49,7 +49,7 @@
                     <div class="header-block__left col-lg-6 col-md-6 col-sm-10">
                         <div class="header-text">
                             <h1 class="header__text--big">Профессиональная типография в Киеве</h1>
-                            <p class="header__text--small col-lg-8 col-md-9 col-sm-10">Мы печатаем: <span class="text__small--color js-text">журналы</span></p>
+                            <p class="header__text--small col-lg-8 col-md-9 col-sm-10">Мы печатаем: <span id="textrotator" class="text__small--color"></span></p>
                         </div>
                         <div class="header-advantages">
                             <div class="header__advantages--block col-lg-4">
@@ -449,25 +449,27 @@
         <div class="questions container">
             <h2 class="questions--name block--name col-xl-4 col-lg-5">Часто задаваемые вопросы</h2>
             <div class="questions-container col-lg-12">
-                <ul class="questions__list active__list"> 
-                    <div class="questions__list--column">Какие типы продукции вы печатаете?
-                        <a href="#pane-1"><img class="questions__list--svg" src="img/untitled.svg"></a>
+                <div id="questions__list" class="questions__list active__list"> 
+                    <div class="questions__list--column" id="js-open-list">Какие типы продукции вы печатаете?
+                        <a href="#"><img class="questions__list--svg" src="img/untitled.svg"></a>
                     </div>
-                    <li class="list">Бланки</li>
-                    <li class="list">Листовки</li>
-                    <li class="list">Поздравительные открытки</li>
-                    <li class="list">Приглашение</li>
-                    <li class="list">Блокноты</li>
-                    <li class="list">Меню</li>
-                    <li class="list">Папки</li>
-                    <li class="list">Тиснение фольгой</li>
-                    <li class="list">Наклейки</li>
-                    <li class="list">Плакаты</li>
-                    <li class="list">Афиши</li>
-                    <li class="list">Книги</li>
-                    <li class="list">Каталоги</li>
-                    <li class="list">Журналы</li>
-                </ul>
+                    <ul class="open__list">
+                        <li class="list">Бланки</li>
+                        <li class="list">Листовки</li>
+                        <li class="list">Поздравительные открытки</li>
+                        <li class="list">Приглашение</li>
+                        <li class="list">Блокноты</li>
+                        <li class="list">Меню</li>
+                        <li class="list">Папки</li>
+                        <li class="list">Тиснение фольгой</li>
+                        <li class="list">Наклейки</li>
+                        <li class="list">Плакаты</li>
+                        <li class="list">Афиши</li>
+                        <li class="list">Книги</li>
+                        <li class="list">Каталоги</li>
+                        <li class="list">Журналы</li>
+                    </ul>
+                </div>
                 <ul class="questions__list">
                     Какие типы продукции вы печатаете?
                     <img class="questions__list--svg" src="img/untitled1.svg">
@@ -500,11 +502,8 @@
             </div>
         </div>
         <div class="map-container">
-            <div class="map-bg">
-
-            </div>
             <div class="map__adress container">
-                <div class="map__adress--box col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                <div   class="map__adress--box col-xl-3 col-lg-4 col-md-5 col-sm-6">
                     <p class="map__adress--name">Офис и производство</p>
                     <div class="map__adress--info">
                         <img class="map__adress--svg" src="./img/phone.svg">
@@ -520,6 +519,7 @@
                     </div>
                 </div>
             </div>
+            <div id="map" class="map-bg"></div>
         </div>
     </main>
     
@@ -538,6 +538,29 @@
             </div>
         </div>
     </footer>
-    <script src="./js/scripts.js"></script>
+    <!-- <script src="./js/scripts.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <script>
+    $('#textrotator').typeIt({
+        strings: ['журналы', 'каталоги', 'листовки', 'наклейки', 'афиши', 'плакаты', 'меню', 'приглашения'],
+        speed: 75,
+        breakLines: false,
+        autoStart: false,
+        loop: true
+    });
+    </script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 50.5244226, lng: 30.4581045},
+            zoom: 15
+            });
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer>
+    </script>
 </body>
 </html>

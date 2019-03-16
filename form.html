@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link href="./css/form.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+        <div class="form__box">
+                <p class="form__name">Узнайте точную стоимость заказа</p>
+                <p class="form__name--text">Оставьте заявку, заполнив форму ниже, и мы Вам перезвоним точной информацией!</p>
+                <form action="#" method="get">
+                        <div class="column">
+                            <input class="form__content" required type="text" name="Name" placeholder="Имя/Компания">
+                            <input class="form__content" type="text" name="telephone" placeholder="Ваш телефон">
+                            <p class="form__content--type">Тип продукции</p>
+                            <select class="content__type--text" name = "type">
+                                <option value = "1">Книги</option>
+                                <option value = "2">Журналы</option>
+                                <option value = "3">Каталоги</option>
+                                <option value = "4">Буклеты</option>
+                                <option value = "4">Плакаты</option>
+                                <option value = "4">Листовки</option>
+                                <option value = "4">Визитки</option>
+                            </select>
+                            <input class="form__content" type="text" name="printing" placeholder="Тираж">
+                            <textarea class="outline form__content--textarea" required name="message" placeholder="Описание"></textarea>
+
+                        </div>
+                        <button class="button js-btn">Рассчитать</button>
+                </form>
+            </div>
+</body>
+</html>
